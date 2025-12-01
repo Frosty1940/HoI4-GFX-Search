@@ -132,6 +132,13 @@
         ]
       },
       {
+        "name": "No Compromise, No Surrender",
+        "gfx_folder": "./dlc_gfx/dlc049_no_compromise_no_surrender",
+        "interface_folders": [
+          "./interface/ncns"
+        ]
+      },
+      {
         "name": "No Step Back",
         "gfx_folder": "./dlc_gfx/dlc034_no_step_back",
         "interface_folders": [
