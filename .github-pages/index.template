@@ -345,52 +345,42 @@
       
       <div id="topbar" class="topbar">
         <label class="toggle-button">
-          <input id="goalsSection-toggle" type="checkbox" onclick="toggleIcons('goalsSection')" checked>
           <input id="goalsSection-toggle" type="checkbox" onclick="toggleIcons('goalsSection')">
           <span class="button toggle-button-span">National Focuses</span>
         </label>
         <label class="toggle-button">
-          <input id="ideasSection-toggle" type="checkbox" onclick="toggleIcons('ideasSection')" checked>
           <input id="ideasSection-toggle" type="checkbox" onclick="toggleIcons('ideasSection')">
           <span class="button toggle-button-span">Ideas</span>
         </label>
         <label class="toggle-button">
-          <input id="characterIdeasSection-toggle" type="checkbox" onclick="toggleIcons('characterIdeasSection')" checked>
           <input id="characterIdeasSection-toggle" type="checkbox" onclick="toggleIcons('characterIdeasSection')">
           <span class="button toggle-button-span">Character Ideas</span>
         </label>
         <label class="toggle-button">
-          <input id="texticonsSection-toggle" type="checkbox" onclick="toggleIcons('texticonsSection')" checked>
           <input id="texticonsSection-toggle" type="checkbox" onclick="toggleIcons('texticonsSection')">
           <span class="button toggle-button-span">Texticons</span>
         </label>
         <label class="toggle-button">
-          <input id="eventsSection-toggle" type="checkbox" onclick="toggleIcons('eventsSection')" checked>
           <input id="eventsSection-toggle" type="checkbox" onclick="toggleIcons('eventsSection')">
           <span class="button toggle-button-span">Events</span>
         </label>
         <label class="toggle-button">
-          <input id="newsEventsSection-toggle" type="checkbox" onclick="toggleIcons('newsEventsSection')" checked>
           <input id="newsEventsSection-toggle" type="checkbox" onclick="toggleIcons('newsEventsSection')">
           <span class="button toggle-button-span">News Events</span>
         </label>
         <label class="toggle-button">
-          <input id="agenciesSection-toggle" type="checkbox" onclick="toggleIcons('agenciesSection')" checked>
           <input id="agenciesSection-toggle" type="checkbox" onclick="toggleIcons('agenciesSection')">
           <span class="button toggle-button-span">Agencies</span>
         </label>
         <label class="toggle-button">
-          <input id="decisionsSection-toggle" type="checkbox" onclick="toggleIcons('decisionsSection')" checked>
           <input id="decisionsSection-toggle" type="checkbox" onclick="toggleIcons('decisionsSection')">
           <span class="button toggle-button-span">Decision Icons</span>
         </label>
         <label class="toggle-button">
-          <input id="decisionsCatSection-toggle" type="checkbox" onclick="toggleIcons('decisionsCatSection')" checked>
           <input id="decisionsCatSection-toggle" type="checkbox" onclick="toggleIcons('decisionsCatSection')">
           <span class="button toggle-button-span">Decision Category Icons</span>
         </label>
         <label class="toggle-button">
-          <input id="decisionsPicsSection-toggle" type="checkbox" onclick="toggleIcons('decisionsPicsSection')" checked>
           <input id="decisionsPicsSection-toggle" type="checkbox" onclick="toggleIcons('decisionsPicsSection')">
           <span class="button toggle-button-span">Decision Category Pictures</span>
         </label>
