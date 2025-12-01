@@ -89,11 +89,13 @@ def load_config(config_path: Path) -> IconSearchConfig:
     except Exception as e:
         logging.exception(f"Failed to load config file")
         raise
+    
+    config_dir = config_path.parent
 
     # Parse sections (convert paths to Path objects)
     sections = {}
     for section, cfg in data.get("sections", {}).items():
-        paths = [Path(p) for p in cfg.get("paths", [])]
+        paths = [config_dir / p for p in cfg.get("paths", [])]
         remove_str = cfg.get("remove_str", None)
         sections[section] = {"paths": paths, "remove_str": remove_str}
 
@@ -105,15 +107,15 @@ def load_config(config_path: Path) -> IconSearchConfig:
     for dlc_data in data.get("dlcs", []):
         try:
             name = dlc_data["name"]
-            gfx_folder = Path(dlc_data["gfx_folder"])
-            interface_folders = [Path(p) for p in dlc_data.get("interface_folders", [])]
+            gfx_folder = config_dir / dlc_data["gfx_folder"]
+            interface_folders = [config_dir / p for p in dlc_data.get("interface_folders", [])]
             dlcs.append(DLC(name, gfx_folder, interface_folders))
         except KeyError as e:
             logging.warning(f"Missing key in DLC configuration: {e}")
 
     return IconSearchConfig(
         title=data["title"],
-        template_path=Path(data["template_path"]),
+        template_path=config_dir / data["template_path"],
         favicon=data.get("favicon"),
         replace_date=data.get("replace_date", False),
         convert_images=data.get("convert_images", True),
